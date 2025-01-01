@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Real Time Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="side-heading">ABC ORGANIZATION</h1>
+        <div class="side-heading"><h3>Community Service Hour Form</h3></div>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required> <br> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone No:</label>
+            <input type="number" id="phone" name="phone" required> <br> <br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required class="msg"></textarea> <br>
+
+        
+            <button type="button" onclick="preview()">Preview</button>
+        </form>
+    </div>
+
+    <div id="previews" style="display: none;">
+        <h2>Preview</h2>
+        <p><strong>First Name:</strong> <span id="previewFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="previewLastName"></span></p>
+        <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+        <p><strong>Phone No:</strong> <span id="previewPhone"></span></p>
+        <p><strong>Message:</strong> <span id="previewMessage"></span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
